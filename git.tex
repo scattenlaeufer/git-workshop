@@ -66,84 +66,6 @@
 	{\scriptsize Bildquelle: Wikipedia (\url{https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/National_Security_Agency.svg/718px-National_Security_Agency.svg.png})}
 \end{frame}
 
-\section{Try and (hopefully not) Fail}
-\subsection{Installation}
-\begin{frame}[fragile]{Installation}
-	\begin{itemize}
-		\item Linux:
-			\begin{itemize}
-				\item Mit der Paketverwaltung eurer Distribution das Paket \verb|git| installieren.
-				\item Debian \& Ubuntu: \verb|sudo apt-get install git|
-			\end{itemize}
-		\item Windows:
-			\begin{itemize}
-				\item \url{https://msysgit.github.io/}
-			\end{itemize}
-		\item Mac OS:
-			\begin{itemize}
-				\item \url{http://git-scm.com/download/mac}
-			\end{itemize}
-	\end{itemize}
-\end{frame}
-
-\begin{frame}[fragile]{Konfiguration}
-	\begin{itemize}
-		\item Globale Konfiguration in \verb+~/.gitconfig+
-		\item wichtige globale Konfiguratonen:
-			\begin{itemize}
-				\item \verb+git config --global user.name NAME+
-				\item \verb+git config --global user.email EMAIL@ADREESSE+
-			\end{itemize}
-		\item im Projekt in \verb+./.git/config+
-	\end{itemize}
-\end{frame}
-
-\subsection{usage}
-\begin{frame}[fragile]{wichtigste Befehle}
-	\begin{itemize}
-		\item basic:
-			\begin{itemize}
-				\item \verb+git init+
-				\item \verb+git clone ``ADRESSE ZUM REPOSITORY''+
-				\item \verb+git add DATEI+
-				\item \verb+git status+
-				\item \verb+git commit -m ``ÄNDERUNGSBESCHREIBUNG''+
-				\item \verb+git commit --amend+
-				\item \verb+git push ADRESSE BRANCHNAME+
-				\item \verb+git pull+
-				\item \verb+git log+
-			\end{itemize}
-	\end{itemize}
-	\begin{block}{ein eigener Versuch}
-		\begin{itemize}
-			\item Clont das Repository dieser Präsi
-			\item \verb|git clone kiss12@137.226.113.201:~/git-vortrag|
-			\item schaut mal nach, wie viele commits ich schon gemacht habe
-		\end{itemize}
-	\end{block}
-\end{frame}
-
-\begin{frame}[fragile]{weiter wichtige Befehle}
-	\begin{itemize}
-		\item more advanced:
-			\begin{itemize}
-				\item \verb+git branch BRANCH+
-				\item \verb+git checkout BRANCH+
-				\item \verb+git checkout BRANCH1+\\
-					\verb+git merge BRANCH2+
-				\item \verb+git diff+
-				\item \verb+git branch -d BRANCH+
-			\end{itemize}
-	\end{itemize}
-	\begin{block}{ein weiterer Versuch}
-		\begin{itemize}
-			\item Erstellt einen neuen Branch
-			\item pusht ihn ins Repository
-			\item hat es geklappt?
-		\end{itemize}
-	\end{block}
-\end{frame}
-
 \subsection{Git in Gruppenarbeiten}
 \begin{frame}{Git als Versionskontrolle in Gruppenarbeiten}
 	\begin{itemize}
@@ -219,6 +141,7 @@
 			\begin{itemize}
 				\item github.com\footnote{bietet auch einige sehr gute Tutorials zu Git}
 				\item gitorious.org
+				\item bitbucket.org\footnote{bietet Git- und Murcurial-Repositories und bei Anmeldung mit einer Univeritäts-Mail-Adresse private Repositorie mit Zugriff durch soviele, wie man will.}
 			\end{itemize}
 		\item sehr leicht zu managen
 		\item sind in der Nutzung genauso wie Gitolite
@@ -241,6 +164,86 @@
 		\end{itemize}
 	\end{columns}
 \end{frame}
+
+\section{Try and (hopefully not) Fail}
+\subsection{Installation}
+\begin{frame}[fragile]{Installation}
+	\begin{itemize}
+		\item Linux:
+			\begin{itemize}
+				\item Mit der Paketverwaltung eurer Distribution das Paket \verb|git| installieren.
+				\item Debian \& Ubuntu: \verb|sudo apt-get install git|
+				\item Ansonsten: \url{http://git-scm.com/download/linux}
+			\end{itemize}
+		\item Windows:
+			\begin{itemize}
+				\item \url{https://msysgit.github.io/}
+			\end{itemize}
+		\item Mac OS:
+			\begin{itemize}
+				\item \url{http://git-scm.com/download/mac}
+			\end{itemize}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Konfiguration}
+	\begin{itemize}
+		\item Globale Konfiguration in \verb+~/.gitconfig+
+		\item wichtige globale Konfiguratonen:
+			\begin{itemize}
+				\item \verb+git config --global user.name NAME+
+				\item \verb+git config --global user.email EMAIL@ADREESSE+
+			\end{itemize}
+		\item im Projekt in \verb+./.git/config+
+	\end{itemize}
+\end{frame}
+
+\subsection{usage}
+\begin{frame}[fragile]{wichtigste Befehle}
+	\begin{itemize}
+		\item basic:
+			\begin{itemize}
+				\item \verb+git init+
+				\item \verb+git clone ``ADRESSE ZUM REPOSITORY''+
+				\item \verb+git add DATEI+
+				\item \verb+git status+
+				\item \verb+git commit -m ``ÄNDERUNGSBESCHREIBUNG''+
+				\item \verb+git commit --amend+
+				\item \verb+git push ADRESSE BRANCHNAME+
+				\item \verb+git pull+
+				\item \verb+git log+
+			\end{itemize}
+	\end{itemize}
+	\begin{block}{ein eigener Versuch}
+		\begin{itemize}
+			\item Clont das Repository dieser Präsi
+			\item \verb|git clone kiss12@137.226.113.201:~/git-vortrag|
+			\item schaut mal nach, wie viele commits ich schon gemacht habe
+		\end{itemize}
+	\end{block}
+\end{frame}
+
+\begin{frame}[fragile]{weiter wichtige Befehle}
+	\begin{itemize}
+		\item more advanced:
+			\begin{itemize}
+				\item \verb+git branch BRANCH+
+				\item \verb+git checkout BRANCH+
+				\item \verb+git checkout BRANCH1+\\
+					\verb+git merge BRANCH2+
+				\item \verb+git diff+
+				\item \verb+git branch -d BRANCH+
+			\end{itemize}
+	\end{itemize}
+	\begin{block}{ein weiterer Versuch}
+		\begin{itemize}
+			\item Erstellt einen neuen Branch
+			\item pusht ihn ins Repository
+			\item hat es geklappt?
+		\end{itemize}
+	\end{block}
+\end{frame}
+
 
 \section{Weitere Hilfe}
 \begin{frame}{Weitere Hilfe}
